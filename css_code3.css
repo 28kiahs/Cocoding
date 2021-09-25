@@ -1,0 +1,8 @@
+*{
+font-size: 30px;
+background: linear-gradient(to bottom, mediumpurple, teal);
+background-attachment: fixed;
+text-align: justify;
+font-family: 'Zen Tokyo Zoo', cursive;
+}
+body{border: 10px solid mediumsteelblue; margin: 50px; padding: 15px;}

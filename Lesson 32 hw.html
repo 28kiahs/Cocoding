@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+
+		#top-part{
+
+		height: 50px;
+		width: 100px;
+		background: linear-gradient(to bottom right, mediumvioletred, blueviolet);
+		animation-name: color-change;
+		animation-duration: 2.5s;
+		animation-iteration-count: infinite;
+		
+		}
+
+		#middle-part{
+
+		height: 50px;
+		width: 200px;
+		background: linear-gradient(to bottom right, mediumvioletred, blueviolet);
+		animation-name: color-change;
+		animation-duration: 2.5s;
+		animation-iteration-count: infinite;
+		
+		}
+
+		#w1{
+
+		height: 50px;
+			width: 50px;
+			background: linear-gradient(to bottom right, mediumvioletred, blueviolet);
+			border-radius: 50%;
+			margin-right: 100px;
+			margin-left: 610px;
+			animation-name: color-change;
+		animation-duration: 2.5s;
+		animation-iteration-count: infinite;
+		}
+		
+		
+		#w2{
+
+		height: 50px;
+			width: 50px;
+			background: linear-gradient(to bottom right, mediumvioletred, blueviolet);
+			border-radius: 50%;
+			animation-name: color-change;
+		animation-duration: 2.5s;
+		animation-iteration-count: infinite;
+			}
+		
+		#flex-container{
+
+			display: flex;
+		}
+		@keyframes moving{
+
+			0%{left: 0px; top: 0px;}
+			50%{left: 500px; top: 0px;}
+			100%{left: 0px; top: 0px;}
+		}
+
+		#id1{
+
+
+			animation-name: moving;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: reverse;
+		position: relative;
+		}
+		@keyframes color-change{
+			from{background: linear-gradient(to bottom right,mediumvioletred, blueviolet);}
+			to{background: linear-gradient(to bottom left, mediumorchid, darkorchid);}
+		}
+	</style>
+</head>
+<body>
+<div id="id1">
+	<center><div id="top-part"></div></center>
+	<center><div id="middle-part"></div></center>
+	<div id="flex-container">
+	<center><div id="w1"></div></center>
+	<center><div id="w2"></div></center>
+	</div>
+	
+</div>
+</body>
+</html>

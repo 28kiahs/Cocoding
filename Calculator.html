@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<button onclick="calculator()">Calculator</button>
+
+	<script type="text/javascript">
+		
+		function calculator() {
+			var a = window.prompt("Enter a number.") 
+			var b = window.prompt("Enter a symbol.")
+			var c = window.prompt("Enter another number.")
+
+			switch(b){
+
+				case "+":alert((a*1)+(c*1));
+				break;
+				case "*":alert(a*c);
+				break;
+				case "/":alert(a/c);
+				break;
+				case "-":alert(a-c);
+				break;
+			}
+		}
+
+	</script>
+
+</body>
+</html>

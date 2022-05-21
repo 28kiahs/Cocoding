@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<form>
+		
+		Enter first number: <input id="id1"type="number" name="number 1">
+		Enter a symbol: <input id="id2"type="text" name="symbol">
+		Enter second number: <input id="id3"type="number" name="number 2">
+		
+		<button onclick="calculator()">Calculator</button>
+
+
+	</form>
+
+<script type="text/javascript">
+		
+		function calculator() {
+			var a = document.getElementById('id1').value;
+			var b = document.getElementById('id2').value;
+			var c = document.getElementById('id3').value;
+
+			switch(b){
+
+				case "+":alert((a*1)+(c*1));
+				break;
+				case "*":alert(a*c);
+				break;
+				case "/":alert(a/c);
+				break;
+				case "-":alert(a-c);
+				break;
+				default: alert("You have entered the wrong symbol.")
+				break;
+			}
+		}
+
+	</script>
+
+</body>
+</html>

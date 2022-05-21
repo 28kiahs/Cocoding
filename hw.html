@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+	<button onclick="object_calling()">Object Calling</button>
+	
+	<div id="id1"></div>
+
+	<script type="text/javascript">
+		
+		function object_calling(){
+
+			student1 = {
+				id: 1,
+				name: "Kiah Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			student2 = {
+				id: 1,
+				name: "Kiah",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			student3 = {
+				id: 1,
+				name: "Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			document.getElementById('id1').innerHTML = "<p> Student 1's name is <b>"+student1.name+"</b>. She lives in "+student1.address+", and her parents' names are "+student1.fathers_name+" and "+student1.mothers_name+". She goes to "+student1.school_name +" </p> <p> Student 2's name is <b>"+student2.name+"</b>. She lives in "+student2.address+", and her parents' names are "+student2.fathers_name+" and "+student2.mothers_name+". She goes to "+student2.school_name +"</p> <p> Student 3's name is <b>"+student3.name+"</b>. She lives in "+student3.address+", and her parents' names are "+student3.fathers_name+" and "+student3.mothers_name+". She goes to "+student3.school_name +"</p>"
+
+		}
+	</script>
+
+	
+</body>
+</html>

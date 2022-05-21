@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 39</title>
+	<style type="text/css">
+		
+
+
+	</style>
+</head>
+<body>
+	<button onclick="check_vote()"> Check Vote </button>
+	<button onclick="check_greatest()">Check Greatest</button>
+	<button onclick="check_result()"> Check Result</button>
+	<button onclick="show_numbers()">Show Numbers</button>
+	<button onclick="show_number()">Show Number</button>
+	<button onclick="even_odd()">Even or Odd</button>
+<div id="id1"></div>
+	<script type="text/javascript">
+		function check_vote() {
+				var a=window.prompt("Enter your age.");
+
+				if(a>=18){
+
+					alert("You can vote:");
+				}else{
+
+					alert("You cannot vote.");
+				}
+			}	
+
+			function check_greatest() {
+				var a=window.prompt("Enter 1st number.")
+				var b=window.prompt("Enter 2nd number.")
+				var c=window.prompt("Enter 3rd number.")
+
+				if (a>b && a>c) {
+					alert(a+" is greater than the other numbers.");
+				}else{
+
+					if (b>a && b>c){
+						alert(b+" is the greatest number.");
+					}else{
+
+					alert(c+" is the greatest number.");
+				}
+
+				}
+			}
+
+
+			function check_result(){
+
+				var a=window.prompt("What is your percentage? (Enter without the percentage sign.")
+
+				if (a<30) {
+
+					alert("fail")
+				}else{
+
+					if (a>=30 && a<45) {
+
+						alert("3rd Division")
+					}else{
+
+						if (a>=45 && a<60) {
+
+							alert("2nd Division.")
+						}else{
+
+							if (a>=60) {
+
+								alert("1st Division")
+							}
+						}
+					}
+				}
+			}
+
+			function show_numbers(){
+
+				var a=window.prompt("Enter from which number you want to print");
+				var b=window.prompt("Enter upto which number you want to print");
+
+				for (var i=a*1; i<=b*1; i++){
+
+					alert(i);
+				}
+				}
+
+				function show_number(){
+
+				var a=window.prompt("Enter from which number you want to print");
+				var b=window.prompt("Enter upto which number you want to print");
+
+				for (var i=a*1; i>=b*1; i--){
+
+					alert(i);
+				}
+				}
+
+				function even_odd(){
+
+					var a=window.prompt("Enter a number.")
+
+					if (a%2==0) {
+
+						alert("even")
+
+					}else{
+
+						alert("odd")
+
+						
+					}
+					if (a==0) {
+							alert("It is 0")
+						}
+				}
+
+			
+
+	</script>
+
+</body>
+</html>

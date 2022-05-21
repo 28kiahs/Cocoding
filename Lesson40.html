@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+	<button onclick="object_calling()">Object Calling</button>
+	<button onclick="object_call()">Object Call</button>
+	<button onclick="object()">Object</button>
+	<div id="id1"></div>
+
+	<script type="text/javascript">
+		
+		function object_calling(){
+
+			student1 = {
+				id: 1,
+				name: "Kiah Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			student2 = {
+				id: 1,
+				name: "Kiah",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			student3 = {
+				id: 1,
+				name: "Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			document.getElementById('id1').innerHTML = "The student names are: "+student1.name+", "+student2.name+", "+student3.name;
+		}
+		function object_call(){
+
+			student = {
+				id: 1,
+				name: "Kiah Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			alert(student.name);
+		}
+	function object(){
+
+			student1 = {
+				id: 1,
+				name: "Kiah Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			student2 = {
+				id: 1,
+				name: "Kiah",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			student3 = {
+				id: 1,
+				name: "Singla",
+				address: "CA",
+				fathers_name: "Amit",
+				mothers_name:"Jyoti",
+				school_name: "Harker"
+			}
+			document.getElementById('id1').innerHTML = "The student names are:<ol><li>" +student1.name+"</li><li>"+student2.name+"</li><li>"+student3.name+"</li></ol>";
+		}
+
+	</script>
+
+	
+</body>
+</html>

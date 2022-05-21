@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event</title>
+</head>
+<body onload="button2_show();">
+	<button onclick="button1_show();">button1</button>
+	<button>button2</button>
+	<button onmouseover="button3_show();">button3</button>
+	<button onmousedown="button4_show();">button4</button>
+	<button onmouseup="button5_show();">button5</button>
+
+	<form onsubmit="form_show();">
+		Name: <input type="text" name="name"><br>
+		Email: <input type="text" name="email"><br>
+		<input type="submit" name="save" value="save">
+	</form>
+
+
+	<script type="text/javascript">
+
+	function button1_show(){
+		alert("Showing button 1");
+	}
+
+
+
+	function button2_show(){
+		alert("Showing button 2");
+	}
+
+	function button3_show(){
+		alert("Showing button 3");
+	}
+
+	function button4_show(){
+		alert("Showing button 4");
+	}
+
+	function button5_show(){
+		alert("Showing button 5");
+	}
+
+	function form_show(){
+		alert("Showing form");
+	}
+</script>
+</body>
+</html>

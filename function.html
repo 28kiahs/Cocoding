@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<button onclick="printValues();">Print Values</button>
+<button onclick="printSquareRoot();">Print Square Root</button>
+<div id="id1"></div>
+
+<script type="text/javascript">
+	
+	function printValues(){
+
+		var id = 12; //numeric
+		var name = "Kiah"; //string
+		var x = 102.45; //floating value
+		//Boolean b = new Boolean(true); //boolean
+		var a = ["c","c++","python","php"]; //array
+
+		document.getElementById("id1").innerHTML = "<ul><li>"+id+"</li><li>"+name+"</li><li>"+x+"</li><li>"+a[0]+"</li></ul>"
+	}
+
+	function printSquareRoot(){
+
+		var x = 10
+		alert(Math.sqrt(x));
+	}
+
+
+</script>
+</body>
+</html>

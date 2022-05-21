@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 42</title>
+</head>
+<body>
+	<button onclick="get_power()">Get Power</button>
+	<button onclick="show_file()">Show File</button>
+	<button onclick="show_round()">Show Round</button>
+	<button onclick="show_cell()">Show Cell</button>
+	<button onclick="show_floor()">Show Floor</button>
+	<button onclick="show_sign()">Show Opposite Sign</button>
+	<button onclick="show_random()">Show Random</button>
+	<button onclick="show_trunket()">Show Trunket</button>
+
+	<script type="text/javascript">
+		function get_power(){
+			var a= window.prompt("Enter a number");
+			var b= window.prompt("Enter a power");
+			//alert(Math.pow(8, 20000000000000000000000000))
+			alert("The answer is: "+Math.pow(a, b))
+		}
+		function show_file(){
+
+			alert(Math.PI)
+		}
+		function show_round(){
+			var a= window.prompt("Enter a number that you want to round.");
+			//alert(Math.round(3141592653589793.1))
+			alert("The answer is: "+Math.round(a))
+		}
+		function show_cell(){
+			var a= window.prompt("Enter a number. It will be rounded up.");
+			//alert(Math.ceil(6.3))
+			alert("The answer is: "+Math.ceil(a))
+		}
+		function show_floor(){
+			var a= window.prompt("Enter a number. It will be rounded down.");
+			//alert(Math.floor(6.3))
+			alert("The answer is: "+Math.floor(a))
+		}
+		function show_sign(){
+			var a= window.prompt("Enter a number. If it is positive, it will be one, negative will be negative one, and zero will just be zero.");
+			//alert(Math.sign(-7))
+			alert("The answer is: "+Math.sign(a))
+		}
+		function show_random(){
+
+			alert(Math.random())
+		}
+		function show_trunket(){
+			var a= window.prompt("Enter a number. If it has a decimal, the decimal part will be removed.");
+			//alert(Math.trunc(4.3))
+			alert("The answer is: "+Math.trunc(a))
+		}
+
+	</script>
+</body>
+</html>
